@@ -1,6 +1,7 @@
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
+import FloatingShapes from "@/components/ui/FloatingShapes";
 import landing from "@/data/tr/landing.json";
 
 const cardColors: Record<string, { bg: string; icon: string; iconBg: string; border: string }> = {
@@ -47,13 +48,14 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function WhyNexus() {
   return (
-    <section className="bg-gray-light py-16 sm:py-20">
+    <section className="relative overflow-hidden bg-cream py-8 sm:py-10">
+      <FloatingShapes variant="cream" />
       <Container>
         <SectionTitle
           title={landing.whyNexus.title}
           subtitle={landing.whyNexus.subtitle}
         />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {landing.whyNexus.items.map((item, index) => {
             const colors = cardColors[item.icon] ?? cardColors.star;
             return (

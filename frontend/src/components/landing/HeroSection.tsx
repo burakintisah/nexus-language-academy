@@ -5,6 +5,7 @@ import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import FloatingShapes from "@/components/ui/FloatingShapes";
 import landing from "@/data/tr/landing.json";
 import common from "@/data/tr/common.json";
 
@@ -73,7 +74,8 @@ function VideoPlayer() {
 
 export default function HeroSection() {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-white pt-16 pb-8 sm:pt-20 sm:pb-10 lg:pt-24 lg:pb-12">
+      <FloatingShapes variant="hero" />
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left column — Price & Features */}

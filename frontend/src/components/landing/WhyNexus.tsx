@@ -2,6 +2,7 @@ import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 import FloatingShapes from "@/components/ui/FloatingShapes";
+import { boldify } from "@/lib/boldify";
 import landing from "@/data/tr/landing.json";
 
 const cardColors: Record<string, { bg: string; icon: string; iconBg: string; border: string }> = {
@@ -66,7 +67,7 @@ export default function WhyNexus() {
               <h3 className="font-heading mb-2 text-lg font-bold text-text-dark">
                 {item.title}
               </h3>
-              <p className="text-sm text-text-muted">{item.description}</p>
+              <p className="text-sm text-text-muted">{boldify(item.description)}</p>
             </Card>
             );
           })}

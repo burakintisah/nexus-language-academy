@@ -6,6 +6,7 @@ import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import FloatingShapes from "@/components/ui/FloatingShapes";
+import { boldify } from "@/lib/boldify";
 import landing from "@/data/tr/landing.json";
 import common from "@/data/tr/common.json";
 
@@ -100,7 +101,7 @@ export default function HeroSection() {
               {landing.hero.features.map((feature) => (
                 <li key={feature} className="flex items-start gap-3 text-text-dark">
                   <CheckIcon />
-                  <span className="text-sm sm:text-base">{feature}</span>
+                  <span className="text-sm sm:text-base">{boldify(feature)}</span>
                 </li>
               ))}
             </ul>

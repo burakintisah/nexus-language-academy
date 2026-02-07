@@ -7,6 +7,14 @@ import { NAV_LINKS } from "@/lib/constants";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import common from "@/data/tr/common.json";
 
+const MENU_COLORS = [
+  "border-emerald-400 bg-emerald-50 text-emerald-900 hover:bg-emerald-100",
+  "border-sky-400 bg-sky-50 text-sky-900 hover:bg-sky-100",
+  "border-violet-400 bg-violet-50 text-violet-900 hover:bg-violet-100",
+  "border-amber-400 bg-amber-50 text-amber-900 hover:bg-amber-100",
+  "border-rose-400 bg-rose-50 text-rose-900 hover:bg-rose-100",
+];
+
 interface MobileMenuProps {
   open: boolean;
   onClose: () => void;
@@ -54,13 +62,13 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
           </button>
         </div>
 
-        <nav className="flex flex-col gap-1 p-4">
-          {NAV_LINKS.map((link) => (
+        <nav className="flex flex-col gap-2 p-4">
+          {NAV_LINKS.map((link, i) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={onClose}
-              className="rounded-lg px-4 py-3 text-base font-medium text-text-dark transition-colors hover:bg-gray-light"
+              className={`rounded-lg border-l-4 px-4 py-3 text-base font-medium transition-colors ${MENU_COLORS[i % MENU_COLORS.length]}`}
             >
               {link.label}
             </Link>

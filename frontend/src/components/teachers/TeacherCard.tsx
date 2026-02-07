@@ -36,7 +36,7 @@ export default function TeacherCard({ teacher }: TeacherCardProps) {
             {teacher.name.charAt(0)}
           </div>
           <div>
-            <h3 className="text-lg font-bold text-text-dark">{teacher.name}</h3>
+            <h3 className="font-heading text-lg font-bold text-text-dark">{teacher.name}</h3>
             <p className="text-sm font-medium text-primary">{teacher.title}</p>
           </div>
         </div>

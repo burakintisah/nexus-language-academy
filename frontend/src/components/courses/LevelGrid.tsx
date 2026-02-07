@@ -23,7 +23,7 @@ export default function LevelGrid() {
                   {level.level}
                 </span>
                 <div>
-                  <h3 className="text-lg font-bold text-text-dark">
+                  <h3 className="font-heading text-lg font-bold text-text-dark">
                     {level.name}
                   </h3>
                   <p className="text-sm text-text-muted">
@@ -51,7 +51,7 @@ export default function LevelGrid() {
               <div className="overflow-hidden">
                 <p className="mb-4 text-text-muted">{level.description}</p>
 
-                <h4 className="mb-2 font-semibold text-text-dark">
+                <h4 className="font-heading mb-2 font-semibold text-text-dark">
                   Bu seviyede neler öğrenilir?
                 </h4>
                 <ul className="mb-4 space-y-1">
@@ -65,7 +65,7 @@ export default function LevelGrid() {
                   ))}
                 </ul>
 
-                <h4 className="mb-2 font-semibold text-text-dark">
+                <h4 className="font-heading mb-2 font-semibold text-text-dark">
                   Kullanılan Materyaller
                 </h4>
                 <ul className="space-y-1">

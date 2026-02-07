@@ -28,7 +28,7 @@ export default function Footer() {
 
           {/* Pages */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
+            <h3 className="font-heading mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
               {common.footer.pages}
             </h3>
             <ul className="space-y-2">
@@ -47,7 +47,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
+            <h3 className="font-heading mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
               {common.footer.contact}
             </h3>
             <ul className="space-y-2 text-sm text-gray-300">
@@ -66,7 +66,7 @@ export default function Footer() {
 
           {/* Social Media */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
+            <h3 className="font-heading mb-4 text-sm font-semibold uppercase tracking-wider text-gray-300">
               {common.footer.socialMedia}
             </h3>
             <div className="flex gap-4">

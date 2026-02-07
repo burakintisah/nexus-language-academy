@@ -7,7 +7,7 @@ export const SITE_DESCRIPTION =
 
 export const SOCIAL_LINKS = {
   instagram: "https://instagram.com/nexuslanguageacademy",
-  facebook: "https://facebook.com/nexuslanguageacademy",
+  tiktok: "https://tiktok.com/@nexuslanguageacademy",
   youtube: "https://youtube.com/@nexuslanguageacademy",
 } as const;
 

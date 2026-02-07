@@ -74,7 +74,7 @@ export default function PricingCard({ pkg }: PricingCardProps) {
         rel="noopener noreferrer"
         className="w-full"
       >
-        {pkg.recommended && <WhatsAppIcon />}
+        <WhatsAppIcon />
         {pricing.ctaText}
       </Button>
     </Card>

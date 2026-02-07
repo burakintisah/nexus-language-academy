@@ -4,6 +4,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 import FloatingShapes from "@/components/ui/FloatingShapes";
 import SectionDivider from "@/components/ui/SectionDivider";
+import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 import CTABand from "@/components/landing/CTABand";
 import PlacementTestForm from "@/components/placement-test/PlacementTestForm";
 import placementTest from "@/data/tr/placement-test.json";
@@ -25,15 +26,17 @@ export default function PlacementTestPage() {
       <section className="relative overflow-hidden bg-white py-16 sm:py-20">
         <FloatingShapes variant="hero" />
         <Container>
-          <SectionTitle
-            title={placementTest.pageTitle}
-            subtitle={placementTest.pageSubtitle}
-          />
+          <FadeInOnScroll>
+            <SectionTitle
+              title={placementTest.pageTitle}
+              subtitle={placementTest.pageSubtitle}
+            />
+          </FadeInOnScroll>
 
           <div className="mx-auto max-w-4xl">
             <div className="grid gap-8 lg:grid-cols-5">
               {/* Left: Info */}
-              <div className="lg:col-span-2">
+              <FadeInOnScroll direction="right" className="lg:col-span-2">
                 <p className="mb-6 text-text-muted">{placementTest.intro}</p>
 
                 <div className="space-y-3">
@@ -48,14 +51,14 @@ export default function PlacementTestPage() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </FadeInOnScroll>
 
               {/* Right: Form */}
-              <div className="lg:col-span-3">
+              <FadeInOnScroll direction="left" delay={200} className="lg:col-span-3">
                 <Card>
                   <PlacementTestForm />
                 </Card>
-              </div>
+              </FadeInOnScroll>
             </div>
           </div>
         </Container>

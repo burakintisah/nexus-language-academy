@@ -3,6 +3,7 @@ import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import FloatingShapes from "@/components/ui/FloatingShapes";
 import SectionDivider from "@/components/ui/SectionDivider";
+import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 import CTABand from "@/components/landing/CTABand";
 import PricingCard from "@/components/pricing/PricingCard";
 import pricing from "@/data/tr/pricing.json";
@@ -24,20 +25,26 @@ export default function PricingPage() {
       <section className="relative overflow-hidden bg-white py-16 sm:py-20">
         <FloatingShapes variant="hero" />
         <Container>
-          <SectionTitle
-            title={pricing.pageTitle}
-            subtitle={pricing.pageSubtitle}
-          />
+          <FadeInOnScroll>
+            <SectionTitle
+              title={pricing.pageTitle}
+              subtitle={pricing.pageSubtitle}
+            />
+          </FadeInOnScroll>
 
           <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
-            {pricing.packages.map((pkg) => (
-              <PricingCard key={pkg.id} pkg={pkg} />
+            {pricing.packages.map((pkg, i) => (
+              <FadeInOnScroll key={pkg.id} delay={i * 150}>
+                <PricingCard pkg={pkg} />
+              </FadeInOnScroll>
             ))}
           </div>
 
-          <p className="mt-8 text-center text-sm text-text-muted">
-            {pricing.note}
-          </p>
+          <FadeInOnScroll>
+            <p className="mt-8 text-center text-sm text-text-muted">
+              {pricing.note}
+            </p>
+          </FadeInOnScroll>
         </Container>
       </section>
       <SectionDivider topColor="#ffffff" bottomColor="#2EAF4B" />

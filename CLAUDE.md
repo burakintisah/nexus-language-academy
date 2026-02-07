@@ -20,3 +20,9 @@
 - Font: Nunito (via `next/font/google`)
 - Use `next/image` for all images
 - No hardcoded Turkish strings in components — import from `data/tr/` JSON files
+
+## Git Workflow
+- **Never commit directly to `main`**
+- Always create a feature branch (`feature/...`, `fix/...`, etc.)
+- Push the branch and open a PR to `main`
+- Merge via PR after review — Vercel auto-deploys on merge

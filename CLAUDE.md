@@ -53,3 +53,4 @@ Every page follows a consistent visual pattern:
   - XXX is incremental starting from 1 — check the latest branch number from the repo before creating a new one (`git branch -a | grep NLA- | sort -t'-' -k2 -n | tail -1`)
 - After every completed task: commit, push, and **open a PR** to `main`
 - Merge via PR after review — Vercel auto-deploys on merge
+- **Do NOT** add `Co-Authored-By` or "Generated with Claude Code" lines to commit messages

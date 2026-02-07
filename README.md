@@ -1,97 +1,97 @@
 # Nexus Language Academy
 
-Nexus Language Academy'nin resmi web platformu. Online İngilizce eğitim hizmetleri sunan akademinin tanıtım sitesi ve (yakında) tam kapsamlı eğitim yönetim sistemi.
+The official web platform for Nexus Language Academy — an online English language school. Currently a marketing site, soon to become a full-featured learning management system.
 
-## Proje Yapısı
+## Project Structure
 
 ```
 nexus-language-academy/
-├── frontend/          # Next.js web uygulaması
-├── backend/           # (Yakında...)
-└── CLAUDE.md          # Geliştirici kılavuzu
+├── frontend/          # Next.js web application
+├── backend/           # (Coming soon...)
+└── CLAUDE.md          # Developer guide
 ```
 
 ---
 
 ## Frontend
 
-Next.js 16 (App Router) ile geliştirilmiş, Vercel üzerinde deploy edilen statik site.
+A statically generated site built with Next.js 16 (App Router), deployed on Vercel.
 
-### Teknoloji
+### Tech Stack
 
-| Araç | Versiyon |
+| Tool | Version |
 |------|---------|
 | Next.js | 16 (App Router + Turbopack) |
 | React | 19 |
 | TypeScript | 5 |
 | Tailwind CSS | 4 |
-| Paket Yöneticisi | pnpm |
+| Package Manager | pnpm |
 
-### Özellikler
+### Features
 
-- Responsive tasarım (mobil, tablet, masaüstü)
-- Animasyonlu dekoratif arka plan elementleri ve dalga geçişleri
-- Sıcak krem/beyaz/yeşil renk paleti
-- WhatsApp entegrasyonu (CTA butonları, form yönlendirmeleri)
-- SEO optimizasyonlu statik sayfalar
-- Tüm Türkçe içerik JSON veri dosyalarından yönetiliyor
+- Fully responsive design (mobile, tablet, desktop)
+- Animated decorative backgrounds with floating shapes and wave section dividers
+- Warm cream/white/green color palette
+- WhatsApp integration (CTA buttons, form redirects)
+- SEO-optimized static pages
+- All Turkish content managed via JSON data files
 
-### Sayfalar
+### Pages
 
-| Sayfa | Yol | Açıklama |
-|-------|-----|----------|
-| Ana Sayfa | `/` | Fiyat, tanıtım videosu, neden Nexus, kurs özeti, CTA |
-| Programlar | `/courses` | Seviye bazlı eğitim programları (A1-B2) |
-| Eğitmenler | `/teachers` | Eğitmen kadrosu ve tanıtım videoları |
-| Ücretlendirme | `/pricing` | Paket seçenekleri ve fiyatlandırma |
-| Seviye Tespit | `/placement-test` | Ücretsiz seviye tespit sınavı formu |
+| Page | Route | Description |
+|------|-------|-------------|
+| Home | `/` | Pricing, intro video, why Nexus, course overview, CTA |
+| Courses | `/courses` | Level-based English programs (A1–B2) |
+| Teachers | `/teachers` | Instructor profiles and intro videos |
+| Pricing | `/pricing` | Package options and pricing |
+| Placement Test | `/placement-test` | Free placement test form |
 
-### Kurulum ve Çalıştırma
+### Getting Started
 
 ```bash
 cd frontend
 pnpm install
-pnpm dev        # Geliştirme sunucusu (localhost:3000)
+pnpm dev        # Dev server (localhost:3000)
 ```
 
 ```bash
 pnpm build      # Production build
-pnpm lint       # ESLint kontrolü
+pnpm lint       # ESLint check
 ```
 
-### Ortam Değişkenleri
+### Environment Variables
 
 ```env
-NEXT_PUBLIC_WA_PHONE=905XXXXXXXXX   # WhatsApp iletişim numarası
+NEXT_PUBLIC_WA_PHONE=905XXXXXXXXX   # WhatsApp contact number
 ```
 
 ---
 
 ## Backend
 
-> ### Yakında geliyor...
+> ### Coming soon...
 >
-> Backend tarafı aktif olarak planlanıyor ve geliştirme aşamasına geçmek üzere. Hedeflenen özellikler:
+> The backend is being actively planned and is about to enter development. Here's what's on the horizon:
 >
-> - **Öğrenci Paneli** — Ders takibi, ödev yönetimi, ilerleme raporları
-> - **Eğitmen Paneli** — Ders planlama, öğrenci değerlendirme, materyal paylaşımı
-> - **Admin Dashboard** — Tam kapsamlı akademi yönetim sistemi
-> - **Online Seviye Tespit Sınavı** — Otomatik değerlendirmeli interaktif sınav
-> - **Ödeme Sistemi** — Online ders paketi satın alma
-> - **Ders Rezervasyon Sistemi** — Takvim bazlı ders planlama ve hatırlatmalar
-> - **Bildirim Sistemi** — E-posta ve WhatsApp bildirimleri
+> - **Student Portal** — Lesson tracking, homework management, progress reports
+> - **Teacher Portal** — Lesson planning, student assessments, material sharing
+> - **Admin Dashboard** — Full-featured academy management system
+> - **Online Placement Test** — Interactive test with automatic scoring
+> - **Payment System** — Online lesson package purchases
+> - **Booking System** — Calendar-based lesson scheduling and reminders
+> - **Notification System** — Email and WhatsApp notifications
 >
-> Teknoloji seçimleri ve mimari kararlar netleştiriliyor. Bu alan güncellenecek.
+> Tech stack and architecture decisions are being finalized. Stay tuned!
 
 ---
 
-## Geliştirme
+## Development
 
-Detaylı geliştirici kılavuzu için [CLAUDE.md](./CLAUDE.md) dosyasına bakın.
+See [CLAUDE.md](./CLAUDE.md) for the full developer guide.
 
 ### Git Workflow
 
-1. `main` branch'e direkt commit yapılmaz
-2. Yeni branch: `NLA-XXX` formatında
-3. PR açılır, review sonrası merge edilir
-4. Vercel merge sonrası otomatik deploy eder
+1. Never commit directly to `main`
+2. Create branches using the `NLA-XXX` naming convention
+3. Open a PR, merge after review
+4. Vercel auto-deploys on merge to `main`

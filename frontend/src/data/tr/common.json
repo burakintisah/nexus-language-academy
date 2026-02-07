@@ -22,6 +22,21 @@
     "email": "info@nexuslanguageacademy.com",
     "phone": "+90 506 930 69 65"
   },
+  "aria": {
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat"
+  },
+  "menu": {
+    "title": "Menü"
+  },
+  "validation": {
+    "required": "Bu alan zorunludur"
+  },
+  "courses": {
+    "learnTitle": "Bu seviyede neler öğrenilir?",
+    "materialsTitle": "Kullanılan Materyaller",
+    "notSpecified": "Belirtilmedi"
+  },
   "whatsapp": {
     "defaultMessage": "Merhaba, Nexus Language Academy hakkında bilgi almak istiyorum.",
     "lessonRequest": "Merhaba, ders talep etmek istiyorum. Bana uygun programlar hakkında bilgi verir misiniz?",

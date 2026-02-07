@@ -83,6 +83,8 @@ export default function Topbar() {
 
       {/* Spacer for fixed header */}
       <div className="h-16 sm:h-18" />
+      {/* Gradient fade from navbar to content */}
+      <div className="h-6 bg-gradient-to-b from-navy/15 to-transparent" />
     </>
   );
 }

@@ -10,12 +10,17 @@
   --color-text-dark: #1A1A2E;
   --color-text-muted: #6B7280;
   --font-sans: var(--font-nunito);
+  --font-heading: var(--font-fredoka);
 }
 
 body {
   background: #ffffff;
   color: var(--color-text-dark);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), system-ui, sans-serif;
 }
 
 @keyframes float-slow {

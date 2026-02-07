@@ -40,12 +40,12 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between border-b p-4">
-          <span className="text-lg font-bold text-navy">Menü</span>
+        <div className="flex items-center justify-between bg-navy p-4">
+          <span className="text-lg font-bold text-white">Menü</span>
           <button
             type="button"
             onClick={onClose}
-            className="rounded-md p-2 text-text-dark"
+            className="rounded-md p-2 text-white"
             aria-label="Menüyü kapat"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

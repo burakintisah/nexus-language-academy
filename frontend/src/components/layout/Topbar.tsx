@@ -24,8 +24,8 @@ export default function Topbar() {
       <header
         className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/95 shadow-md backdrop-blur-sm"
-            : "bg-white"
+            ? "bg-navy/95 shadow-md backdrop-blur-sm"
+            : "bg-navy"
         }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
@@ -37,7 +37,7 @@ export default function Topbar() {
               height={48}
               className="h-10 w-10 sm:h-12 sm:w-12"
             />
-            <span className="text-lg font-bold text-navy sm:text-xl">
+            <span className="text-lg font-bold text-white sm:text-xl">
               Nexus Language Academy
             </span>
           </Link>
@@ -47,7 +47,7 @@ export default function Topbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-text-dark transition-colors hover:text-primary"
+                className="text-sm font-medium text-white/85 transition-colors hover:text-white"
               >
                 {link.label}
               </Link>
@@ -69,7 +69,7 @@ export default function Topbar() {
           <button
             type="button"
             onClick={() => setMobileOpen(true)}
-            className="rounded-md p-2 text-text-dark lg:hidden"
+            className="rounded-md p-2 text-white lg:hidden"
             aria-label="Menüyü aç"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

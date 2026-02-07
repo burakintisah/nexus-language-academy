@@ -6,6 +6,7 @@
   --color-navy: #1B3A5C;
   --color-gold: #FFD700;
   --color-gray-light: #F5F7FA;
+  --color-cream: #FFF9F0;
   --color-text-dark: #1A1A2E;
   --color-text-muted: #6B7280;
   --font-sans: var(--font-nunito);
@@ -15,4 +16,17 @@ body {
   background: #ffffff;
   color: var(--color-text-dark);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-5deg); }
+}
+@keyframes float-fast {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }

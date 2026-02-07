@@ -7,13 +7,13 @@ import common from "@/data/tr/common.json";
 
 export default function CourseSummary() {
   return (
-    <section className="py-16 sm:py-20">
+    <section className="bg-white py-8 sm:py-10">
       <Container>
         <SectionTitle
           title={landing.courseSummary.title}
           subtitle={landing.courseSummary.subtitle}
         />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {landing.courseSummary.items.map((course) => (
             <Card key={course.id} className="relative overflow-hidden">
               <div

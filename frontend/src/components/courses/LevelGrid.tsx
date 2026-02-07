@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Card from "@/components/ui/Card";
+import common from "@/data/tr/common.json";
 import courses from "@/data/tr/courses.json";
 
 export default function LevelGrid() {
@@ -52,7 +53,7 @@ export default function LevelGrid() {
                 <p className="mb-4 text-text-muted">{level.description}</p>
 
                 <h4 className="font-heading mb-2 font-semibold text-text-dark">
-                  Bu seviyede neler öğrenilir?
+                  {common.courses.learnTitle}
                 </h4>
                 <ul className="mb-4 space-y-1">
                   {level.details.map((detail, i) => (
@@ -66,7 +67,7 @@ export default function LevelGrid() {
                 </ul>
 
                 <h4 className="font-heading mb-2 font-semibold text-text-dark">
-                  Kullanılan Materyaller
+                  {common.courses.materialsTitle}
                 </h4>
                 <ul className="space-y-1">
                   {level.materials.map((material, i) => (

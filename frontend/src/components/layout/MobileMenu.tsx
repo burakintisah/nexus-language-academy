@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import { NAV_LINKS } from "@/lib/constants";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import common from "@/data/tr/common.json";
@@ -49,12 +50,12 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         }`}
       >
         <div className="flex items-center justify-between bg-navy p-4">
-          <span className="text-lg font-bold text-white">Menü</span>
+          <span className="text-lg font-bold text-white">{common.menu.title}</span>
           <button
             type="button"
             onClick={onClose}
             className="rounded-md p-2 text-white"
-            aria-label="Menüyü kapat"
+            aria-label={common.aria.closeMenu}
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -69,13 +70,21 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
               href={link.href}
               onClick={onClose}
               className={`rounded-lg border-l-4 px-4 py-3 text-base font-medium text-text-dark transition-colors ${MENU_COLORS[i % MENU_COLORS.length]}`}
+              style={{
+                animation: open ? `slide-in-right 0.3s ease-out ${(i + 1) * 0.05}s both` : "none",
+              }}
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        <div className="p-4">
+        <div
+          className="p-4"
+          style={{
+            animation: open ? `fade-in-up 0.3s ease-out ${(NAV_LINKS.length + 1) * 0.05}s both` : "none",
+          }}
+        >
           <Button
             variant="whatsapp"
             href={getWhatsAppLink(common.whatsapp.lessonRequest)}
@@ -83,6 +92,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
             rel="noopener noreferrer"
             className="w-full"
           >
+            <WhatsAppIcon />
             {common.buttons.requestLesson}
           </Button>
         </div>

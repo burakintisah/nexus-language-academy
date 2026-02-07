@@ -4,12 +4,12 @@
     "priceCurrency": "TL",
     "priceLabel": "Ders Saati Fiyatı",
     "features": [
-      "Haftada 2 ders saati, ayda toplam 8 saatlik eğitim programı",
-      "Haftada 1 saat dil bilgisi ve yazma çalışması",
-      "Haftada 1 saat anadili İngilizce olan eğitmenle konuşma pratiği",
-      "Ücretsiz dijital eğitim materyalleri",
-      "Haftalık veli ve öğrenci geri bildirim görüşmeleri",
-      "Okul sınavlarına yönelik hazırlık desteği"
+      "Haftada **2 ders saati**, ayda toplam **8 saatlik** eğitim programı",
+      "Haftada 1 saat **dil bilgisi** ve **yazma** çalışması",
+      "Haftada 1 saat **anadili İngilizce olan eğitmenle** konuşma pratiği",
+      "**Ücretsiz** dijital eğitim materyalleri",
+      "Haftalık **veli ve öğrenci geri bildirim** görüşmeleri",
+      "**Okul sınavlarına** yönelik hazırlık desteği"
     ],
     "videoTitle": "Nexus Farkını Keşfedin \u25B6",
     "videoThumbnail": "/images/hero/video-thumbnail.jpg",
@@ -73,32 +73,32 @@
       {
         "icon": "book",
         "title": "Oxford & Cambridge Materyalleri",
-        "description": "Dünyaca ünlü yayınevlerinin en güncel eğitim materyallerini kullanıyoruz."
+        "description": "**Dünyaca ünlü yayınevlerinin** en güncel eğitim materyallerini kullanıyoruz."
       },
       {
         "icon": "globe",
         "title": "Discovery Education İçerikleri",
-        "description": "Discovery Education'ın interaktif video ve aktiviteleriyle dersleri zenginleştiriyoruz."
+        "description": "Discovery Education'ın **interaktif video ve aktiviteleriyle** dersleri zenginleştiriyoruz."
       },
       {
         "icon": "graduation",
         "title": "ODTÜ Müfredatı Uyumlu",
-        "description": "Programlarımız ODTÜ İngilizce hazırlık müfredatıyla uyumlu olarak tasarlanmıştır."
+        "description": "Programlarımız **ODTÜ İngilizce hazırlık müfredatıyla** uyumlu olarak tasarlanmıştır."
       },
       {
         "icon": "users",
         "title": "Anadili İngilizce Olan Eğitmenler",
-        "description": "Native speaker eğitmenlerimizle konuşma pratiği yaparak doğal İngilizce öğrenin."
+        "description": "**Native speaker** eğitmenlerimizle konuşma pratiği yaparak doğal İngilizce öğrenin."
       },
       {
         "icon": "chart",
         "title": "Haftalık Geri Bildirim",
-        "description": "Her hafta velilerimizle düzenli geri bildirim toplantıları yapıyoruz."
+        "description": "Her hafta velilerimizle **düzenli geri bildirim toplantıları** yapıyoruz."
       },
       {
         "icon": "star",
         "title": "Kişiselleştirilmiş Eğitim",
-        "description": "Her öğrencinin seviyesine ve ihtiyaçlarına özel ders planları oluşturuyoruz."
+        "description": "Her öğrencinin seviyesine ve ihtiyaçlarına **özel ders planları** oluşturuyoruz."
       }
     ]
   },

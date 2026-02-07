@@ -63,7 +63,7 @@ export default function WhyNexus() {
               <div className={`mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full ${colors.iconBg} ${colors.icon}`}>
                 {iconMap[item.icon] ?? iconMap.star}
               </div>
-              <h3 className="mb-2 text-lg font-bold text-text-dark">
+              <h3 className="font-heading mb-2 text-lg font-bold text-text-dark">
                 {item.title}
               </h3>
               <p className="text-sm text-text-muted">{item.description}</p>

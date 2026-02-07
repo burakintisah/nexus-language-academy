@@ -37,7 +37,7 @@ export default function PricingCard({ pkg }: PricingCardProps) {
       )}
 
       <div className="mb-4 text-center">
-        <h3 className="text-xl font-bold text-text-dark">{pkg.name}</h3>
+        <h3 className="font-heading text-xl font-bold text-text-dark">{pkg.name}</h3>
         <p className="mt-1 text-sm text-text-muted">{pkg.description}</p>
       </div>
 

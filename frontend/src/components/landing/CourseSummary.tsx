@@ -29,7 +29,7 @@ export default function CourseSummary() {
                 </span>
                 <span className="text-sm text-text-muted">{course.duration}</span>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-text-dark">
+              <h3 className="font-heading mb-2 text-xl font-bold text-text-dark">
                 {course.name}
               </h3>
               <p className="mb-4 text-sm text-text-muted">{course.description}</p>

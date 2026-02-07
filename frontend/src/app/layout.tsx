@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Nunito, Fredoka } from "next/font/google";
 import Topbar from "@/components/layout/Topbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
@@ -8,6 +8,11 @@ import "./globals.css";
 
 const nunito = Nunito({
   variable: "--font-nunito",
+  subsets: ["latin", "latin-ext"],
+});
+
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
   subsets: ["latin", "latin-ext"],
 });
 
@@ -34,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
-      <body className={`${nunito.variable} antialiased`}>
+      <body className={`${nunito.variable} ${fredoka.variable} antialiased`}>
         <Topbar />
         <main>{children}</main>
         <Footer />

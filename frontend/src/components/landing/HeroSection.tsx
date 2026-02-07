@@ -123,7 +123,7 @@ export default function HeroSection() {
 
           {/* Right column — Video Player */}
           <div>
-            <h2 className="mb-4 text-center text-xl font-extrabold text-navy sm:text-2xl lg:text-left">
+            <h2 className="font-heading mb-4 text-center text-xl font-extrabold text-navy sm:text-2xl lg:text-left">
               {landing.hero.videoTitle}
             </h2>
             <div className="relative aspect-video overflow-hidden rounded-2xl shadow-xl">

@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "courses": "Programlar",
+    "teachers": "Eğitmenler",
+    "pricing": "Ücretlendirme",
+    "placementTest": "Seviye Tespit Sınavı"
+  },
+  "buttons": {
+    "requestLesson": "Ders Talep Et",
+    "freePlacementTest": "Ücretsiz Seviye Tespit Sınavı",
+    "contactUs": "Bize Ulaşın",
+    "details": "Detaylar",
+    "send": "Gönder",
+    "whatsappChat": "WhatsApp ile İletişime Geçin"
+  },
+  "footer": {
+    "pages": "Sayfalar",
+    "contact": "İletişim",
+    "socialMedia": "Sosyal Medya",
+    "copyright": "© 2025 Nexus Language Academy. Tüm hakları saklıdır.",
+    "email": "info@nexuslanguageacademy.com",
+    "phone": "+90 506 930 69 65"
+  },
+  "whatsapp": {
+    "defaultMessage": "Merhaba, Nexus Language Academy hakkında bilgi almak istiyorum.",
+    "lessonRequest": "Merhaba, ders talep etmek istiyorum. Bana uygun programlar hakkında bilgi verir misiniz?",
+    "placementTest": "Merhaba, ücretsiz seviye tespit sınavı için kayıt olmak istiyorum."
+  }
+}

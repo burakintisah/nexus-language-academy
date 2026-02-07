@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "price": "350",
+    "priceCurrency": "TL",
+    "priceLabel": "Ders Saati Fiyatı",
+    "features": [
+      "Haftada 2 ders saati, ayda toplam 8 saatlik eğitim programı",
+      "Haftada 1 saat dil bilgisi ve yazma çalışması",
+      "Haftada 1 saat anadili İngilizce olan eğitmenle konuşma pratiği",
+      "Ücretsiz dijital eğitim materyalleri",
+      "Haftalık veli ve öğrenci geri bildirim görüşmeleri",
+      "Okul sınavlarına yönelik hazırlık desteği"
+    ],
+    "videoTitle": "Nexus Farkını Keşfedin \u25B6",
+    "videoThumbnail": "/images/hero/video-thumbnail.jpg",
+    "youtubeUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  "video": {
+    "title": "Nexus Language Academy'yi Tanıyın",
+    "description": "Eğitim yaklaşımımızı, ders formatlarımızı ve öğrencilerimizin başarı hikayelerini keşfedin.",
+    "youtubeUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  "courseSummary": {
+    "title": "Eğitim Programlarımız",
+    "subtitle": "Her seviyeye uygun, özel tasarlanmış İngilizce eğitim programları",
+    "items": [
+      {
+        "id": "beginner",
+        "name": "Beginner",
+        "level": "A1",
+        "duration": "3-4 ay",
+        "description": "İngilizce yolculuğunuza ilk adımı atın. Temel kelime hazinesi ve günlük iletişim becerileri.",
+        "color": "#7ED957"
+      },
+      {
+        "id": "elementary",
+        "name": "Elementary",
+        "level": "A2",
+        "duration": "3-4 ay",
+        "description": "Temel İngilizce bilginizi güçlendirin. Basit cümleler kurun ve günlük konuşmalara katılın.",
+        "color": "#2EAF4B"
+      },
+      {
+        "id": "pre-intermediate",
+        "name": "Pre-Intermediate",
+        "level": "B1",
+        "duration": "4-5 ay",
+        "description": "Orta seviyeye geçiş yapın. Fikirlerinizi daha akıcı ifade edin ve karmaşık metinleri anlayın.",
+        "color": "#1B3A5C"
+      },
+      {
+        "id": "intermediate",
+        "name": "Intermediate",
+        "level": "B1+",
+        "duration": "4-5 ay",
+        "description": "İngilizce yetkinliğinizi artırın. Akademik ve profesyonel konularda kendinizi ifade edin.",
+        "color": "#1B3A5C"
+      },
+      {
+        "id": "upper-intermediate",
+        "name": "Upper-Intermediate",
+        "level": "B2",
+        "duration": "5-6 ay",
+        "description": "İleri seviye iletişim becerilerini geliştirin. Karmaşık konularda tartışın ve akademik yazım yapın.",
+        "color": "#FFD700"
+      }
+    ]
+  },
+  "whyNexus": {
+    "title": "Neden Nexus Language Academy?",
+    "subtitle": "Fark yaratan eğitim yaklaşımımız",
+    "items": [
+      {
+        "icon": "book",
+        "title": "Oxford & Cambridge Materyalleri",
+        "description": "Dünyaca ünlü yayınevlerinin en güncel eğitim materyallerini kullanıyoruz."
+      },
+      {
+        "icon": "globe",
+        "title": "Discovery Education İçerikleri",
+        "description": "Discovery Education'ın interaktif video ve aktiviteleriyle dersleri zenginleştiriyoruz."
+      },
+      {
+        "icon": "graduation",
+        "title": "ODTÜ Müfredatı Uyumlu",
+        "description": "Programlarımız ODTÜ İngilizce hazırlık müfredatıyla uyumlu olarak tasarlanmıştır."
+      },
+      {
+        "icon": "users",
+        "title": "Anadili İngilizce Olan Eğitmenler",
+        "description": "Native speaker eğitmenlerimizle konuşma pratiği yaparak doğal İngilizce öğrenin."
+      },
+      {
+        "icon": "chart",
+        "title": "Haftalık Geri Bildirim",
+        "description": "Her hafta velilerimizle düzenli geri bildirim toplantıları yapıyoruz."
+      },
+      {
+        "icon": "star",
+        "title": "Kişiselleştirilmiş Eğitim",
+        "description": "Her öğrencinin seviyesine ve ihtiyaçlarına özel ders planları oluşturuyoruz."
+      }
+    ]
+  },
+  "ctaBand": {
+    "title": "Çocuğunuzun İngilizce Yolculuğuna Bugün Başlayın!",
+    "subtitle": "Ücretsiz seviye tespit sınavımızla mevcut İngilizce seviyesini öğrenin.",
+    "cta": "Hemen İletişime Geçin"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pageTitle": "Eğitmenlerimiz",
+  "pageSubtitle": "Alanında uzman, deneyimli eğitmen kadromuzla tanışın",
+  "teachers": [
+    {
+      "id": "teacher-1",
+      "name": "Sarah Johnson",
+      "title": "Baş Eğitmen",
+      "specialization": "Cambridge & Oxford Sertifikalı Eğitmen",
+      "bio": "10 yılı aşkın İngilizce eğitim deneyimine sahip Sarah, Cambridge CELTA ve DELTA sertifikalarına sahiptir. Özellikle genç öğrencilerle çalışma konusunda uzmanlaşmıştır. Oxford ve Cambridge materyallerini kullanarak interaktif ve eğlenceli dersler hazırlamaktadır.",
+      "experience": "10+ yıl deneyim",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "image": "/images/teachers/teacher-1.jpg"
+    },
+    {
+      "id": "teacher-2",
+      "name": "Michael Roberts",
+      "title": "Kıdemli Eğitmen",
+      "specialization": "IELTS & Akademik İngilizce Uzmanı",
+      "bio": "Michael, İngiltere'de doğup büyümüş, anadili İngilizce olan bir eğitmendir. 8 yıllık online eğitim tecrübesiyle IELTS, akademik İngilizce ve iş İngilizcesi alanlarında uzmanlaşmıştır. Discovery Education içerikleriyle zenginleştirdiği dersleriyle öğrencilerinin motivasyonunu yüksek tutmaktadır.",
+      "experience": "8+ yıl deneyim",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "image": "/images/teachers/teacher-2.jpg"
+    }
+  ]
+}

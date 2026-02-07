@@ -1,0 +1,56 @@
+{
+  "pageTitle": "Ücretlendirme",
+  "pageSubtitle": "Şeffaf ve uygun fiyatlarla kaliteli İngilizce eğitimi",
+  "packages": [
+    {
+      "id": "standard",
+      "name": "Standart Paket",
+      "lessonsPerMonth": 8,
+      "pricePerLesson": 350,
+      "totalPrice": 2800,
+      "currency": "TL",
+      "period": "ay",
+      "recommended": true,
+      "badge": "Önerilen",
+      "description": "Haftada 2 ders ile düzenli ve etkili İngilizce eğitimi.",
+      "includes": [
+        "Ayda 8 ders (haftada 2 ders)",
+        "Her ders 40 dakika",
+        "Birebir online dersler",
+        "Oxford & Cambridge materyalleri",
+        "Discovery Education içerikleri",
+        "Haftalık ilerleme raporu",
+        "Veli geri bildirim toplantıları",
+        "Ücretsiz seviye tespit sınavı",
+        "Ödev ve ek çalışma materyalleri"
+      ]
+    },
+    {
+      "id": "intensive",
+      "name": "Yoğun Paket",
+      "lessonsPerMonth": 12,
+      "pricePerLesson": 350,
+      "totalPrice": 4200,
+      "currency": "TL",
+      "period": "ay",
+      "recommended": false,
+      "badge": null,
+      "description": "Haftada 3 ders ile hızlandırılmış İngilizce eğitimi.",
+      "includes": [
+        "Ayda 12 ders (haftada 3 ders)",
+        "Her ders 40 dakika",
+        "Birebir online dersler",
+        "Oxford & Cambridge materyalleri",
+        "Discovery Education içerikleri",
+        "Haftalık ilerleme raporu",
+        "Veli geri bildirim toplantıları",
+        "Ücretsiz seviye tespit sınavı",
+        "Ödev ve ek çalışma materyalleri",
+        "Ekstra konuşma pratiği seansları"
+      ]
+    }
+  ],
+  "note": "Tüm fiyatlarımıza KDV dahildir. Ders ücreti: 350 TL / ders (40 dakika).",
+  "ctaText": "Hemen Başlayın",
+  "ctaMessage": "Merhaba, ücretlendirme hakkında bilgi almak ve kayıt yaptırmak istiyorum."
+}

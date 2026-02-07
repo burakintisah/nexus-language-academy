@@ -1,0 +1,25 @@
+{
+  "pageTitle": "Ücretsiz Seviye Tespit Sınavı",
+  "pageSubtitle": "Çocuğunuzun İngilizce seviyesini ücretsiz olarak belirleyelim",
+  "intro": "Doğru seviyede eğitime başlamak, İngilizce öğrenme sürecinin en önemli adımıdır. Ücretsiz seviye tespit sınavımız ile çocuğunuzun mevcut İngilizce seviyesini belirliyor ve en uygun programı öneriyoruz.",
+  "form": {
+    "nameLabel": "Ad Soyad",
+    "namePlaceholder": "Öğrencinin adı ve soyadı",
+    "phoneLabel": "Telefon Numarası",
+    "phonePlaceholder": "05XX XXX XX XX",
+    "emailLabel": "E-posta Adresi",
+    "emailPlaceholder": "ornek@email.com",
+    "ageLabel": "Yaş / Sınıf",
+    "agePlaceholder": "Örn: 10 yaşında / 4. sınıf",
+    "experienceLabel": "İngilizce Deneyimi (Opsiyonel)",
+    "experiencePlaceholder": "Daha önce İngilizce eğitimi aldıysa kısaca açıklayınız..."
+  },
+  "submitButton": "Seviye Tespit Sınavına Kayıt Ol",
+  "messageTemplate": "Merhaba, seviye tespit sınavı için kayıt olmak istiyorum.\n\nÖğrenci Adı: {name}\nTelefon: {phone}\nE-posta: {email}\nYaş/Sınıf: {age}\nİngilizce Deneyimi: {experience}",
+  "benefits": [
+    "Tamamen ücretsiz",
+    "Online olarak yapılır",
+    "Sonuçlar aynı gün paylaşılır",
+    "Kişiye özel program önerisi"
+  ]
+}

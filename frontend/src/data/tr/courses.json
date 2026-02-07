@@ -1,0 +1,107 @@
+{
+  "pageTitle": "Eğitim Programlarımız",
+  "pageSubtitle": "Her seviyeye uygun, uluslararası standartlarda İngilizce eğitim programları",
+  "intro": "Nexus Language Academy olarak, Oxford, Cambridge ve Discovery Education materyalleriyle desteklenen kapsamlı eğitim programları sunuyoruz. Her ders 40 dakika sürmekte olup, ders ücreti 350 TL'dir.",
+  "materialsNote": "Tüm programlarımızda Oxford University Press, Cambridge University Press ve Discovery Education materyalleri kullanılmaktadır. Müfredatımız ODTÜ İngilizce hazırlık programıyla uyumludur.",
+  "levels": [
+    {
+      "id": "beginner",
+      "name": "Beginner",
+      "level": "A1",
+      "duration": "3-4 ay",
+      "lessonsPerWeek": "2-3 ders",
+      "description": "İngilizce öğrenmeye yeni başlayanlar için tasarlanmış temel seviye programımız.",
+      "details": [
+        "Alfabe ve temel telaffuz kuralları",
+        "Günlük hayatta kullanılan temel kelimeler ve ifadeler",
+        "Basit selamlaşma ve tanışma kalıpları",
+        "Sayılar, renkler, aile üyeleri",
+        "Temel soru kalıpları (What, Where, How)"
+      ],
+      "materials": [
+        "Oxford Discover Level 1-2",
+        "Cambridge Primary English"
+      ]
+    },
+    {
+      "id": "elementary",
+      "name": "Elementary",
+      "level": "A2",
+      "duration": "3-4 ay",
+      "lessonsPerWeek": "2-3 ders",
+      "description": "Temel İngilizce bilgisi olan öğrenciler için geliştirme programı.",
+      "details": [
+        "Günlük konuşma kalıpları ve diyaloglar",
+        "Şimdiki zaman ve geçmiş zaman kullanımı",
+        "Alışveriş, yön tarifi, yemek siparişi gibi günlük durumlar",
+        "Basit paragraf okuma ve anlama",
+        "Kısa yazma aktiviteleri"
+      ],
+      "materials": [
+        "Oxford Discover Level 3-4",
+        "Cambridge Movers Preparation"
+      ]
+    },
+    {
+      "id": "pre-intermediate",
+      "name": "Pre-Intermediate",
+      "level": "B1",
+      "duration": "4-5 ay",
+      "lessonsPerWeek": "2-3 ders",
+      "description": "Orta seviyeye geçiş yapmak isteyen öğrenciler için kapsamlı program.",
+      "details": [
+        "Tüm temel zamanların pekiştirilmesi",
+        "Koşul cümleleri ve dolaylı anlatım",
+        "Fikir ifade etme ve tartışma becerileri",
+        "Orta uzunlukta metinleri okuma ve anlama",
+        "Paragraf yazma ve e-posta yazımı"
+      ],
+      "materials": [
+        "Oxford Discover Level 5",
+        "Cambridge KET/PET Preparation",
+        "Discovery Education Video Series"
+      ]
+    },
+    {
+      "id": "intermediate",
+      "name": "Intermediate",
+      "level": "B1+",
+      "duration": "4-5 ay",
+      "lessonsPerWeek": "3 ders",
+      "description": "İngilizce yetkinliğini artırmak isteyen öğrenciler için ileri düzey program.",
+      "details": [
+        "Karmaşık gramer yapıları ve cümle kalıpları",
+        "Akademik kelime hazinesi geliştirme",
+        "Sunum yapma ve fikir savunma becerileri",
+        "Uzun metinleri analiz etme",
+        "Kompozisyon ve rapor yazma"
+      ],
+      "materials": [
+        "Oxford Discover Level 6",
+        "Cambridge FCE Preparation",
+        "Discovery Education Interactive Content"
+      ]
+    },
+    {
+      "id": "upper-intermediate",
+      "name": "Upper-Intermediate",
+      "level": "B2",
+      "duration": "5-6 ay",
+      "lessonsPerWeek": "3 ders",
+      "description": "İleri seviye İngilizce hedefleyen öğrenciler için yoğun program.",
+      "details": [
+        "İleri düzey gramer ve stil çalışmaları",
+        "Akademik ve profesyonel İngilizce",
+        "Eleştirel düşünme ve analiz becerileri",
+        "İleri düzey okuma ve dinleme",
+        "Akademik yazım ve araştırma becerileri"
+      ],
+      "materials": [
+        "Cambridge Advanced Preparation",
+        "Oxford Academic English",
+        "Discovery Education Advanced Series",
+        "ODTÜ Hazırlık Uyumlu Materyaller"
+      ]
+    }
+  ]
+}

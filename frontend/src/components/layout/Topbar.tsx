@@ -22,9 +22,9 @@ export default function Topbar() {
   return (
     <>
       <header
-        className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 right-0 left-0 z-50 shadow-[0_4px_20px_-2px_rgba(27,58,92,0.35)] transition-all duration-300 ${
           scrolled
-            ? "bg-navy/95 shadow-md backdrop-blur-sm"
+            ? "bg-navy/95 shadow-[0_4px_24px_-2px_rgba(27,58,92,0.5)] backdrop-blur-sm"
             : "bg-navy"
         }`}
       >
@@ -83,8 +83,6 @@ export default function Topbar() {
 
       {/* Spacer for fixed header */}
       <div className="h-16 sm:h-18" />
-      {/* Gradient fade from navbar to content */}
-      <div className="h-6 bg-gradient-to-b from-navy/15 to-transparent" />
     </>
   );
 }

@@ -7,6 +7,7 @@ import Container from "@/components/ui/Container";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import FloatingShapes from "@/components/ui/FloatingShapes";
+import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 import { boldify } from "@/lib/boldify";
 import landing from "@/data/tr/landing.json";
 import common from "@/data/tr/common.json";
@@ -81,7 +82,7 @@ export default function HeroSection() {
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left column — Price & Features */}
-          <div>
+          <FadeInOnScroll direction="right">
             {/* Price */}
             <div className="mb-8">
               <p className="text-sm font-semibold uppercase tracking-wider text-text-muted">
@@ -119,17 +120,17 @@ export default function HeroSection() {
                 {common.buttons.requestLesson}
               </Button>
             </div>
-          </div>
+          </FadeInOnScroll>
 
           {/* Right column — Video Player */}
-          <div>
+          <FadeInOnScroll direction="left" delay={200}>
             <h2 className="font-heading mb-4 text-center text-xl font-extrabold text-navy sm:text-2xl lg:text-left">
               {landing.hero.videoTitle}
             </h2>
             <div className="relative aspect-video overflow-hidden rounded-2xl shadow-xl">
               <VideoPlayer />
             </div>
-          </div>
+          </FadeInOnScroll>
         </div>
       </Container>
     </section>

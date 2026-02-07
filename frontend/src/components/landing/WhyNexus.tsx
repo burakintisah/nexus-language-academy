@@ -2,6 +2,7 @@ import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 import FloatingShapes from "@/components/ui/FloatingShapes";
+import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 import { boldify } from "@/lib/boldify";
 import landing from "@/data/tr/landing.json";
 
@@ -52,23 +53,27 @@ export default function WhyNexus() {
     <section className="relative overflow-hidden bg-cream py-8 sm:py-10">
       <FloatingShapes variant="cream" />
       <Container>
-        <SectionTitle
-          title={landing.whyNexus.title}
-          subtitle={landing.whyNexus.subtitle}
-        />
+        <FadeInOnScroll>
+          <SectionTitle
+            title={landing.whyNexus.title}
+            subtitle={landing.whyNexus.subtitle}
+          />
+        </FadeInOnScroll>
         <div className="grid gap-8 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {landing.whyNexus.items.map((item, index) => {
             const colors = cardColors[item.icon] ?? cardColors.star;
             return (
-            <Card key={index} className={`text-center border-t-4 ${colors.border} ${colors.bg} hover:-translate-y-1`}>
-              <div className={`mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full ${colors.iconBg} ${colors.icon}`}>
-                {iconMap[item.icon] ?? iconMap.star}
-              </div>
-              <h3 className="font-heading mb-2 text-lg font-bold text-text-dark">
-                {item.title}
-              </h3>
-              <p className="text-sm text-text-muted">{boldify(item.description)}</p>
-            </Card>
+            <FadeInOnScroll key={index} delay={index * 100}>
+              <Card className={`text-center border-t-4 ${colors.border} ${colors.bg} hover:-translate-y-1`}>
+                <div className={`mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full ${colors.iconBg} ${colors.icon}`}>
+                  {iconMap[item.icon] ?? iconMap.star}
+                </div>
+                <h3 className="font-heading mb-2 text-lg font-bold text-text-dark">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-text-muted">{boldify(item.description)}</p>
+              </Card>
+            </FadeInOnScroll>
             );
           })}
         </div>

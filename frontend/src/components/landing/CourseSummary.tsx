@@ -2,6 +2,7 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
+import FadeInOnScroll from "@/components/ui/FadeInOnScroll";
 import landing from "@/data/tr/landing.json";
 import common from "@/data/tr/common.json";
 
@@ -9,13 +10,16 @@ export default function CourseSummary() {
   return (
     <section className="bg-white py-8 sm:py-10">
       <Container>
-        <SectionTitle
-          title={landing.courseSummary.title}
-          subtitle={landing.courseSummary.subtitle}
-        />
+        <FadeInOnScroll>
+          <SectionTitle
+            title={landing.courseSummary.title}
+            subtitle={landing.courseSummary.subtitle}
+          />
+        </FadeInOnScroll>
         <div className="grid gap-8 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {landing.courseSummary.items.map((course) => (
-            <Card key={course.id} className="relative overflow-hidden">
+          {landing.courseSummary.items.map((course, i) => (
+            <FadeInOnScroll key={course.id} delay={i * 100}>
+            <Card className="relative overflow-hidden">
               <div
                 className="absolute top-0 left-0 h-1 w-full"
                 style={{ backgroundColor: course.color }}
@@ -40,6 +44,7 @@ export default function CourseSummary() {
                 {common.buttons.details} →
               </Link>
             </Card>
+            </FadeInOnScroll>
           ))}
         </div>
       </Container>

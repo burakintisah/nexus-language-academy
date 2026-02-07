@@ -3,13 +3,13 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 import landing from "@/data/tr/landing.json";
 
-const cardColors: Record<string, { bg: string; icon: string; iconBg: string }> = {
-  book:       { bg: "bg-emerald-50",  icon: "text-emerald-600",  iconBg: "bg-emerald-100" },
-  globe:      { bg: "bg-sky-50",      icon: "text-sky-600",      iconBg: "bg-sky-100" },
-  graduation: { bg: "bg-violet-50",   icon: "text-violet-600",   iconBg: "bg-violet-100" },
-  users:      { bg: "bg-amber-50",    icon: "text-amber-600",    iconBg: "bg-amber-100" },
-  chart:      { bg: "bg-rose-50",     icon: "text-rose-600",     iconBg: "bg-rose-100" },
-  star:       { bg: "bg-indigo-50",   icon: "text-indigo-600",   iconBg: "bg-indigo-100" },
+const cardColors: Record<string, { bg: string; icon: string; iconBg: string; border: string }> = {
+  book:       { bg: "bg-emerald-50",  icon: "text-emerald-600",  iconBg: "bg-emerald-100", border: "border-t-emerald-400" },
+  globe:      { bg: "bg-sky-50",      icon: "text-sky-600",      iconBg: "bg-sky-100",     border: "border-t-sky-400" },
+  graduation: { bg: "bg-violet-50",   icon: "text-violet-600",   iconBg: "bg-violet-100",  border: "border-t-violet-400" },
+  users:      { bg: "bg-amber-50",    icon: "text-amber-600",    iconBg: "bg-amber-100",   border: "border-t-amber-400" },
+  chart:      { bg: "bg-rose-50",     icon: "text-rose-600",     iconBg: "bg-rose-100",    border: "border-t-rose-400" },
+  star:       { bg: "bg-indigo-50",   icon: "text-indigo-600",   iconBg: "bg-indigo-100",  border: "border-t-indigo-400" },
 };
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -47,7 +47,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function WhyNexus() {
   return (
-    <section className="py-16 sm:py-20">
+    <section className="bg-gray-light py-16 sm:py-20">
       <Container>
         <SectionTitle
           title={landing.whyNexus.title}
@@ -57,7 +57,7 @@ export default function WhyNexus() {
           {landing.whyNexus.items.map((item, index) => {
             const colors = cardColors[item.icon] ?? cardColors.star;
             return (
-            <Card key={index} className={`text-center ${colors.bg}`}>
+            <Card key={index} className={`text-center border-t-4 ${colors.border} ${colors.bg} hover:-translate-y-1`}>
               <div className={`mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full ${colors.iconBg} ${colors.icon}`}>
                 {iconMap[item.icon] ?? iconMap.star}
               </div>
